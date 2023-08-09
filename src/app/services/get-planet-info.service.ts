@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Planet } from '../Planet';
 import { ActivatedRoute } from '@angular/router';
-import { environment } from '../../environments/environment'
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,6 @@ export class GetPlanetInfoService {
   constructor(private http: HttpClient, private route: ActivatedRoute) {
     this.apiUrl = `https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planets`;
     this.rapidKey = environment.RAPID_KEY;
-    console.log(this.rapidKey)
   }
 
   getPlanetById(id: string): Observable<Planet> {
