@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngIf="planet$; else loading" class="planet__container">
+    <h1>{{planet$.name}}</h1>
+    <div class="image">
+      <img src={{planet$.imgSrc.img}} alt="">
+      <p>{{planet$.imgSrc.imgDescription}}</p>
+    </div>
+    <p>{{planet$.description}}</p>
+    <a href={{planet$.wikiLink}} target="_blank" rel="noopener noreferrer">See more on Wikipedia</a>
+  </div>
+
+  <ng-template #loading>
+    <div class="spinner">
+      <mat-spinner mode="indeterminate" color="accent"></mat-spinner>
+    </div>
+  </ng-template>
+</div>

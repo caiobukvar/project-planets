@@ -1,0 +1,26 @@
+<div class="app-root">
+  <main>
+    <nav>
+      <div class="navs">
+        <!-- se usar routerLink, a http request não é feita, logo tem de usar href -->
+        <a routerLink="/">Planets</a>
+        <a href="/planet/1">Mercury</a>
+        <a href="/planet/2">Venus</a>
+        <a href="/planet/3">Earth</a>
+        <a href="/planet/4">Mars</a>
+        <a href="/planet/5">Jupiter</a>
+        <a href="/planet/6">Saturn</a>
+        <a href="/planet/7">Uranus</a>
+        <a href="/planet/8">Neptune</a>
+
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <p>Project developed by Caio Bukvar</p>
+    </div>
+  </footer>
+
+</div>

@@ -1,0 +1,40 @@
+/* SCSS HEX */
+$dark-purple: #401f3eff;
+$english-violet: #3f2e56ff;
+$marian-blue: #453f78ff;
+$air-superiority-blue: #759aabff;
+$vanilla: #faf2a1ff;
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  opacity: .92;
+
+  h1 {
+    color: $marian-blue;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 80%;
+    color: $air-superiority-blue;
+    font-weight: 500;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/* SCSS HEX */
+$dark-purple: #401f3eff;
+$english-violet: #3f2e56ff;
+$marian-blue: #453f78ff;
+$air-superiority-blue: #759aabff;
+$vanilla: #faf2a1ff;
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  min-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
