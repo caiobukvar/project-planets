@@ -10,8 +10,7 @@ import { environment } from '../../environments/environment';
 })
 export class GetPlanetInfoService {
   private apiUrl: string;
-  currentEnvironment !: string
-  rapidKey: string
+  rapidKey: any
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
     this.apiUrl = `https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planets`;
@@ -25,7 +24,6 @@ export class GetPlanetInfoService {
     });
 
     const searchUrl = `${this.apiUrl}/${id}`;
-
     return this.http.get<Planet>(searchUrl, { headers });
   }
 }
